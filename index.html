@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ブラウザで遊べるテトリス</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>テトリス</h1>
+        <p>矢印キーで操作し、できるだけ長くブロックを積み上げないようにしましょう。</p>
+      </header>
+      <section class="game-area">
+        <canvas id="tetris" width="240" height="480" aria-label="テトリスのプレイフィールド"></canvas>
+        <aside class="info">
+          <div class="score-board">
+            <h2>スコア</h2>
+            <p id="score">0</p>
+          </div>
+          <div class="controls">
+            <h2>操作方法</h2>
+            <ul>
+              <li>← → : ブロックを左右に移動</li>
+              <li>↑ : ブロックを回転</li>
+              <li>↓ : ブロックを素早く落下</li>
+              <li>スペース : ハードドロップ</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="tetris.js"></script>
+  </body>
+</html>
